@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript" src="/homey.js" data-origin="settings"></script>
+    <style>
+      input { width: 100%; padding: 10px; box-sizing: border-box; margin-bottom: 10px; }
+      button { padding: 10px 20px; background: #000; color: #fff; border: none; cursor: pointer; }
+      #save_msg { color: green; display: none; margin-top: 10px; font-weight: bold; }
+    </style>
+  </head>
+  <body>
+    <h2>Google 캘린더 주소 설정</h2>
+    <p>구글 캘린더 설정 > 통합 > <strong>'iCal 형식의 비공개 주소'</strong>를 입력하세요.</p>
+    
+    <input type="text" id="ics_url" placeholder="https://calendar.google.com/..." />
+    <button id="save_btn">저장 (Save)</button>
+    <div id="save_msg">✅ 저장되었습니다!</div>
+
+    <script>
+      function onHomeyReady(Homey) {
+        // 1. 기존 저장된 값 불러오기
+        Homey.get('ics_url', (err, value) => {
+          if(value) document.getElementById('ics_url').value = value;
+        });
+
+        // 2. 저장 버튼 클릭 시
+        document.getElementById('save_btn').addEventListener('click', () => {
+          const url = document.getElementById('ics_url').value;
+          Homey.set('ics_url', url, (err) => {
+            if(!err) {
+              const msg = document.getElementById('save_msg');
+              msg.style.display = 'block';
+              setTimeout(() => msg.style.display = 'none', 3000);
+            }
+          });
+        });
+        
+        Homey.ready();
+      }
+    </script>
+  </body>
+</html>

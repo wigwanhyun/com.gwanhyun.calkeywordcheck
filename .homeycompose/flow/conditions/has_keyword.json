@@ -1,0 +1,16 @@
+{
+  "id": "has_keyword",
+  "title": { "en": "Today's event has keyword", "ko": "오늘 일정에 키워드가 있음" },
+  "titleFormatted": { 
+    "en": "Today's event contains [[keyword]]", 
+    "ko": "오늘 일정에 [[keyword]] 포함됨" 
+  },
+  "args": [
+    {
+      "name": "keyword",
+      "type": "text",
+      "title": { "en": "Keyword", "ko": "키워드" },
+      "placeholder": { "en": "ex) Vacation", "ko": "예) 연차" }
+    }
+  ]
+}
