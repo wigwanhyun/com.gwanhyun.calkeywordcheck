@@ -12,6 +12,15 @@ class CalendarApp extends Homey.App {
 
         return await this.checkCalendarForKeyword(keyword);
       });
+    this.homey.flow.getConditionCard('missing_keyword')
+      .registerRunListener(async (args, state) => {
+        const keyword = args.keyword as string;
+        if (!keyword) return true; // 키워드 안 적었으면 "없는 게 맞음" 처리 (혹은 false)
+
+        // 로직 재사용: 결과만 반대(!)로 뒤집어서 반환
+        const isFound = await this.checkCalendarForKeyword(keyword);
+        return !isFound; 
+      });
   }
 
   async checkCalendarForKeyword(keyword: string): Promise<boolean> {

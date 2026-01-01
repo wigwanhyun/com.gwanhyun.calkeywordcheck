@@ -1,0 +1,19 @@
+{
+  "id": "missing_keyword",
+  "title": {
+    "en": "Today's event does NOT contain keyword",
+    "ko": "오늘 일정에 키워드가 없음"
+  },
+  "titleFormatted": {
+    "en": "Today's event does NOT contain [[keyword]]",
+    "ko": "오늘 일정에 [[keyword]] 없음"
+  },
+  "args": [
+    {
+      "name": "keyword",
+      "type": "text",
+      "title": { "en": "Keyword", "ko": "키워드" },
+      "placeholder": { "en": "e.g., Vacation", "ko": "예: 연차" }
+    }
+  ]
+}

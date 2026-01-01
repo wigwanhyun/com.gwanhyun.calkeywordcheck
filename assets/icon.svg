@@ -1,11 +1,24 @@
-<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-  <rect x="50" y="80" width="400" height="370" rx="40" ry="40" fill="#ffffff" stroke="#333333" stroke-width="30" />
-  <path d="M50 120 a40 40 0 0 1 40 -40 h320 a40 40 0 0 1 40 40 v80 h-400 z" fill="#3b82f6" stroke="#333333" stroke-width="0" />
-  <line x1="50" y1="200" x2="450" y2="200" stroke="#333333" stroke-width="30" />
-  <line x1="130" y1="50" x2="130" y2="130" stroke="#333333" stroke-width="30" stroke-linecap="round" />
-  <line x1="370" y1="50" x2="370" y2="130" stroke="#333333" stroke-width="30" stroke-linecap="round" />
-  <circle cx="170" cy="320" r="30" fill="#333333" />
-  <line x1="240" y1="320" x2="380" y2="320" stroke="#333333" stroke-width="30" stroke-linecap="round" />
-  <circle cx="170" cy="400" r="30" fill="#333333" />
-  <line x1="240" y1="400" x2="330" y2="400" stroke="#333333" stroke-width="30" stroke-linecap="round" />
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="calendar-icon">
+	<path fill="#FFFFFF" stroke="#333333" stroke-width="30" d="M410,450H90c-22.1,0-40-17.9-40-40V120c0-22.1,17.9-40,40-40h320c22.1,0,40,17.9,40,40v290C450,432.1,432.1,450,410,450z"/>
+	
+	<path fill="#3B82F6" d="M450,120v80H50v-80c0-22.1,17.9-40,40-40h320C432.1,80,450,97.9,450,120z"/>
+	
+	<line fill="none" stroke="#333333" stroke-width="30" x1="50" y1="200" x2="450" y2="200"/>
+	
+	<line fill="none" stroke="#333333" stroke-width="30" stroke-linecap="round" x1="130" y1="50" x2="130" y2="130"/>
+	<line fill="none" stroke="#333333" stroke-width="30" stroke-linecap="round" x1="370" y1="50" x2="370" y2="130"/>
+	
+	<g>
+		<circle fill="#333333" cx="170" cy="320" r="30"/>
+		<line fill="none" stroke="#333333" stroke-width="30" stroke-linecap="round" x1="240" y1="320" x2="380" y2="320"/>
+	</g>
+	<g>
+		<circle fill="#333333" cx="170" cy="400" r="30"/>
+		<line fill="none" stroke="#333333" stroke-width="30" stroke-linecap="round" x1="240" y1="400" x2="330" y2="400"/>
+	</g>
+</g>
 </svg>

@@ -1,4 +1,3 @@
-none
 # Calendar Keyword Check
 
 Automate your home based on your schedule!
